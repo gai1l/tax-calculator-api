@@ -24,4 +24,4 @@ const validateInput = (body) => {
   }
 };
 
-module.exports = { validateInput }; // ต้องมีบรรทัดนี้!
+module.exports = { validateInput }; 
