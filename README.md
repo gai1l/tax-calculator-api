@@ -36,7 +36,7 @@ json{
     { "level": "2,000,001 ขึ้นไป", "tax": 0 }
   ]
 }
-
+ 
 ## ตัวอย่างการใช้งาน
 ## คำนวณภาษีพื้นฐาน
 bashcurl -X POST http://localhost:5000/tax/calculations \
