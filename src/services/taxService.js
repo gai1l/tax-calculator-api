@@ -12,7 +12,7 @@ const calculateNetIncome = (totalIncome, allowances) => {
   let deduction = PERSONAL_DEDUCTION;
   const donation = allowances.find(a => a.allowanceType === 'donation');
   if (donation && typeof donation.amount === 'number') {
-    deduction += donation.amount; // หักเต็ม! ไม่จำกัด 100,000
+    deduction += donation.amount; 
   }
   return Math.max(0, totalIncome - deduction);
 };
@@ -32,7 +32,7 @@ const calculateTaxByBrackets = (netIncome) => {
       ? remaining
       : Math.min(remaining, bracket.max - bracket.min); // ไม่ +1
 
-    const taxInBracket = Math.round(taxableInBracket * bracket.rate); // ใช้ round
+    const taxInBracket = Math.round(taxableInBracket * bracket.rate); 
     totalTax += taxInBracket;
     remaining -= taxableInBracket;
 
